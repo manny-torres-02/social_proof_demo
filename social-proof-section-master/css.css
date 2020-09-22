@@ -25,4 +25,31 @@ h1 {
     background-color: var(--light-grayish-magenta);
     font-weight:700;
 }
+
+/* review cards */
+.review-card {
+    background-color: var(--very-dark-magenta);
+    margin:5px;
+    border-radius:5px;
+    padding:30px;;
+}
+.buyer{
+    display:flex;
+    /* height:75px; */
+    padding:15px;
+}
+.test{
+    display:block;
+    margin-left:15px;
+} 
+.name  {
+ color: white;
+}
+.title{
+    color:var(--soft-pink)
+}
+.profile{
+    display:block;
+    border-radius:100%;
+}
 /* SMALL SCREENS  */
