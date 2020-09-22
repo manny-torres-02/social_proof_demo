@@ -12,26 +12,47 @@
 /* body stylings  */
 
 body {
+    margin:auto;
+    margin-top: 10%;
     font-family: 'Spartan';
     font-size: 15px;
 }
 
-h1 {
-    color: var(--very-dark-magenta) 
+h1, .statement {
+    color: var(--very-dark-magenta);
+    text-align: center; 
+    margin: auto;
+    width:80%;
+    padding:5%;
 }
 
 /* star cards  */
 .review {
-    background-color: var(--light-grayish-magenta);
+    background-color: var(--light-grayish-magenta); 
+    color: var(--very-dark-magenta);
+    text-align: center;
+    margin: auto;
+    width:85%;
     font-weight:700;
+    border-radius: 5px;
+    
+}
+
+.row-stars { 
+    padding-top:20px;
+}
+.review p {
+    padding-bottom: 20px;
 }
 
 /* review cards */
 .review-card {
+    max-width:80%;
     background-color: var(--very-dark-magenta);
     margin:5px;
     border-radius:5px;
-    padding:30px;;
+    padding:30px;
+
 }
 .buyer{
     display:flex;
@@ -41,6 +62,7 @@ h1 {
 .test{
     display:block;
     margin-left:15px;
+    padding-left:5px;
 } 
 .name  {
  color: white;
