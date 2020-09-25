@@ -16,6 +16,7 @@ body {
     margin-top: 10%;
     font-family: 'Spartan';
     font-size: 15px;
+    width:100%;
 }
 
 h1, .statement {
@@ -46,10 +47,15 @@ h1, .statement {
 }
 
 /* review cards */
+.testimonial-section{
+    width:85%;
+    margin: auto;
+}
+
 .review-card {
-    max-width:80%;
+   
     background-color: var(--very-dark-magenta);
-    margin:5px;
+    margin-bottom: 20px;
     border-radius:5px;
     padding:30px;
 
@@ -58,6 +64,7 @@ h1, .statement {
     display:flex;
     /* height:75px; */
     padding:15px;
+    margin-bottom:10px;
 }
 .test{
     display:block;
@@ -67,6 +74,11 @@ h1, .statement {
 .name  {
  color: white;
 }
+
+.testimonial { 
+    color:white;
+}
+
 .title{
     color:var(--soft-pink)
 }
@@ -75,3 +87,61 @@ h1, .statement {
     border-radius:100%;
 }
 /* SMALL SCREENS  */
+
+/* LARGE SCREENS */
+@media only screen and (min-width: 1000px) {
+    .top {
+        width:85%;
+        margin: auto;
+      background-color: lightblue;
+      display: flex; 
+      /* padding-bottom: 100px; */
+
+    }
+    .attention  {
+        width:50%;
+    }
+    .ratings {
+        width:50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .review {
+        display: flex;
+        width: 75%;
+        margin-top: auto;
+        margin-bottom: 1em;
+    }
+    .review .row-stars {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin:auto 0 auto 2rem;    
+    }
+    .review p{
+        padding-top:10px;
+        padding-bottom: 10px;
+        margin:0 auto 0 2rem;
+    }
+    .left{
+        margin-left:3em;
+    }
+    .right{
+        margin-right: 3em;
+    }
+
+    /* testimonials */
+    .testimonial-section{
+        width:85%;
+        display:flex;
+        height: 450px;
+    }
+    .review-card{
+        width: 25%;
+        height:250px;
+       
+    }
+    .testimonial{
+        line-height:1.5em ;
+    }
+}
